@@ -1,13 +1,15 @@
 package com.example.androidhomework6;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
+import android.graphics.Color;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,17 +29,29 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
-        switch (id){
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        switch (id) {
             case R.id.settings:
-
+                SettingsFragment settingsFragment = new SettingsFragment();
+                fragmentTransaction.replace(R.id.notes, settingsFragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
                 return true;
             case R.id.list:
-
+                ListFragment listFragment = new ListFragment();
+                fragmentTransaction.replace(R.id.notes, listFragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
                 return true;
             case R.id.about:
-
+                AboutFragment aboutFragment = new AboutFragment();
+                fragmentTransaction.replace(R.id.notes, aboutFragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
                 return true;
         }
+
         return super.onOptionsItemSelected(item);
     }
 }
