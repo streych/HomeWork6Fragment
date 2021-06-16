@@ -5,5 +5,9 @@
     <string name="titel">titel</string>
     <string name="date">date</string>
     <string name="description">description</string>
+    <string name="дшые">Список</string>
+    <string name="фищге">О приложении</string>
+    <string name="about">О программе</string>
+    <string name="settings">Настройки</string>
 
 </resources>
