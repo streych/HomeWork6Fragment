@@ -12,5 +12,9 @@
     <string name="hello_about_fragment">О программе</string>
     <string name="hello_list_fragment">Список</string>
     <string name="hello_settings_fragment">Настройки</string>
-
+    <string-array name="screen_array">
+        <item>Screen 1</item>
+        <item>Screen 2</item>
+        <item>Screen 3</item>
+    </string-array>
 </resources>
