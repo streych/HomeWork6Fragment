@@ -5,5 +5,16 @@
     <string name="titel">titel</string>
     <string name="date">date</string>
     <string name="description">description</string>
-
+    <string name="дшые">Список</string>
+    <string name="фищге">О приложении</string>
+    <string name="about">О программе</string>
+    <string name="settings">Настройки</string>
+    <string name="hello_about_fragment">О программе</string>
+    <string name="hello_list_fragment">Список</string>
+    <string name="hello_settings_fragment">Настройки</string>
+    <string-array name="screen_array">
+        <item>Screen 1</item>
+        <item>Screen 2</item>
+        <item>Screen 3</item>
+    </string-array>
 </resources>
